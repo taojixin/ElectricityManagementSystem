@@ -25,9 +25,18 @@ import {
   Tooltip,
   Pagination,
   Dialog,
-  MessageBox
+  MessageBox,
+  Tag,
+  Tree,
+  Select,
+  Option
 } from 'element-ui'
+// 全局注册
 
+Vue.use(Option)
+Vue.use(Select)
+Vue.use(Tree)
+Vue.use(Tag)
 Vue.use(Dialog)
 Vue.use(Table)
 Vue.use(TableColumn)
@@ -55,4 +64,4 @@ Vue.use(Card)
 Vue.use(Row)
 Vue.use(Col)
 Vue.prototype.$message = Message // 对Message进行全局挂载，这样所有组件都可以通过this访问$message,从而可以进行弹框提示
-Vue.prototype.$confirm =MessageBox.confirm
+Vue.prototype.$confirm =MessageBox.confirm // 这样所有组件都可以通过this访问$cinfirm,从而可以进行弹框提示

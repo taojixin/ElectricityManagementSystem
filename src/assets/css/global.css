@@ -3,6 +3,7 @@ html, body, #app {
   height: 100%;
   padding: 0;
   margin: 0;
+  min-width: 1366;
 }
 
 /* 面包屑导航 */
@@ -20,3 +21,7 @@ html, body, #app {
   margin-top: 15px;
   font-size: 12px;
 }
+
+
+
+
