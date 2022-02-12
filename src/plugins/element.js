@@ -29,10 +29,12 @@ import {
   Tag,
   Tree,
   Select,
-  Option
+  Option,
+  Cascader
 } from 'element-ui'
 // 全局注册
 
+Vue.use(Cascader)
 Vue.use(Option)
 Vue.use(Select)
 Vue.use(Tree)
